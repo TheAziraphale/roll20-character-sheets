@@ -25,9 +25,9 @@
 	<div class="content npc-hide">
 		<div class="input-row">
 			<label data-i18n="inv-build-points">Investigative Build Points: </label>
-			<input name="attr_inv_points_max" type="number" value="16">
+			<input name="attr_inv_points_default" type="number" value="16">
 			<label data-i18n="gen-build-points">General Build Points: </label>
-			<input name="attr_gen_points_max" type="number" value="65">
+			<input name="attr_gen_points_default" type="number" value="65">
 		</div>
 	</div>
 	<div class="content starting-abilities npc-hide">
@@ -2888,7 +2888,7 @@ on("sheet:opened change:sheetsettings", function(eventInfo) {
 			nbaTechnical: ['astronomy', 'chemistry', 'cryptography', 'data-recovery', 'electronic-surveillance', 'forensic-pathology', 'forgery', 'notice', 'outdoor-survival', 'pharmacy', 'photography', 'traffic-analysis', 'urban-survival'],
 			nbaGeneral: ['athletics', 'conceal', 'cover', 'digital-intrusion', 'disguise', 'driving', 'explosive-devices', 'filch', 'gambling', 'hand-to-hand', 'health', 'infiltration', 'mechanics', 'medic', 'network', 'piloting', 'preparedness', 'sense-trouble', 'shooting', 'shrink', 'stability', 'surveillance', 'weapons']};
 
-	getAttrs(["health_default", "stability_default", "sanity_default", "cover_default", "network_default", "sheetsettings", "firstopen"], function(values) {
+	getAttrs(["health_default", "stability_default", "sanity_default", "cover_default", "network_default", "gen_points_default", "inv_points_default", "sheetsettings", "sheetswitch", "firstopen"], function(values) {
 		let updates = {version: 0.5};
 
 		system = values.sheetsettings;
@@ -2901,12 +2901,16 @@ on("sheet:opened change:sheetsettings", function(eventInfo) {
 		});
 
 		if(!values.firstopen) {
-			_.each(["health", "stability", "sanity", "cover", "network"], function(ability) {
+			_.each(["health", "stability", "sanity", "cover", "network", "gen_points", "inv_points"], function(ability) {
 				updates[ability + '_free'] = values[ability + "_default"];
 				if(!npc) {
 					updates[ability + '_max'] = updates[ability + "_free"];
 					updates[ability] = updates[ability + "_free"];
 				}
+			});
+			updates.sheetswitch = values.sheetsettings;
+			setAttrs(updates, {}, function() {
+				getSectionTotal();
 			});
 			updates.sanity_marker = updates.sanity_free;
 			updates.firstopen = 1;
@@ -2923,7 +2927,7 @@ on("sheet:opened change:sheetsettings", function(eventInfo) {
 	});
 });
 
-on(changeString(["health", "stability", "sanity", "cover", "network"], ["default"]), function(eventInfo) {
+on(changeString(["health", "stability", "sanity", "cover", "network","gen_points", "inv_points"], ["default"]), function(eventInfo) {
 	let trigger = eventInfo.sourceAttribute.split('_')[0],
 		updates = {};
 
