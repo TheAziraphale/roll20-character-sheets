@@ -46,6 +46,12 @@ pathfinderofficial:
 pathfinder2e:
 - "Pathfinder 2 Playtest by Roll20"
 - "Pathfinder 2 Playtest by Roll20"
+- hidden
+
+pathfinder2eofficial:
+- "Pathfinder Second Edition by Roll20"
+- "Pathfinder Second Edition by Roll20"
+- Pathfinder
 
 starfinder:
 - "Starfinder by Roll20"
@@ -64,6 +70,20 @@ thestrange:
 
 #Publisher Sheets
 #When adding an official sheet include 'official' in the short name for the select menu
+bandofbladesofficial:
+  - "Band of Blades Official"
+  - "Band of Blades by Evil Hat Productions"
+  - "Forged in the Dark"
+
+bladesinthedarkadvancedofficial:
+- "Blades in the Dark"
+- "Blades in the Dark by Evil Hat Productions"
+- "Forged in the Dark"
+
+bluebeardbride:
+  - "Bluebeard's Bride"
+  - "Bluebeard's Bride by Magpie Games"
+
 earthdawnofficial:
   - "Earthdawn (FASA Official)"
   - "Earthdawn by FASA"
@@ -77,6 +97,11 @@ hcsvntdraconesofficial:
 reachoftitanofficial:
   - "ReachofTitan"
   - "Reach of Titan by Third Act Publishing"
+
+scumandvillainyofficial:
+- "Scum - Villainy"
+- "Scum and Villainy by Evil Hat Productions"
+- "Forged in the Dark"
 
 sportsbrawlofficial:
   - "Sports Brawl by Lost West Media"
@@ -107,6 +132,11 @@ starwarssaga:
 
 fatecore:
 - "Fate_Core"
+- "Fate: Core Edition"
+- "hidden"
+
+fatecorev2:
+- "Fate Core v2"
 - "Fate: Core Edition"
 - "Fate"
 
@@ -671,6 +701,11 @@ scion:
 - "Scion"
 - "Storytelling System"
 
+scion2e:
+- "Scion2e"
+- "Scion Second Edition"
+- "Storytelling System"
+
 dragonage:
 - "Dragon Age RPG"
 - "Dragon Age"
@@ -848,7 +883,8 @@ dasschwarzeauge5:
 
 mutantyearzeroalt:
 - "Mutant Year Zero Alternative"
-- "Mutant: Year Zero"
+- "Mutant: Year Zero Alternative"
+- "Year Zero Engine"
 
 exalted3e:
 - "Exalted 3"
@@ -1229,7 +1265,7 @@ hollowearthexpedition:
 
 aliens:
 - "Aliens"
-- "Aliens"
+- "Aliens Colonial Marines"
 
 dogsinthevineyard:
 - "Dogs-in-the-Vineyard"
@@ -1509,6 +1545,7 @@ lowfantasygaming:
 coriolis:
 - "Coriolis"
 - "Coriolis"
+- "Year Zero Engine"
 
 alpha3dat:
 - "3DeT_ALPHA"
@@ -1832,6 +1869,7 @@ bigeyessmallmouth3e:
 talesfromtheloop:
 - "Tales from the Loop"
 - "Tales from the Loop / TFTF"
+- "Year Zero Engine"
 
 dresdenfilesaccelerated:
 - "DresdenFilesAccelerated"
@@ -1855,10 +1893,6 @@ runequest3ed:
 - "Runequest3"
 - "RuneQuest: 3rd Edition"
 - "RuneQuest"
-
-bladesinthedarkadvanced:
-- "Blades in the Dark"
-- "Blades in the Dark"
 
 mistborn:
 - "Mistborn"
@@ -2073,10 +2107,6 @@ mythras:
 cronicasrpg:
 - "Cronicas-RPG"
 - "Creation of Crônicas"
-
-scumandvillainy:
-- "Scum - Villainy"
-- "Scum and Villainy"
 
 deltagreen:
 - "Delta Green"
@@ -2516,7 +2546,7 @@ terre2:
 bandofblades:
 - "Band of Blades"
 - "Band of Blades"
-- "Blades in the Dark"
+- "hidden"
 
 warhammerblackcrusadeadv:
 - "Black Crusade Advanced API"
@@ -2861,6 +2891,7 @@ synthcide:
 forbiddenlands:
   - "Forbidden_Lands"
   - "Forbidden Lands"
+  - "Year Zero Engine"
 
 elementalrpg:
   - "Elemental"
@@ -2899,9 +2930,61 @@ storiesuntold:
   - "Stories Untold"
   - "Stories Untold"
 
-bluebeardbride:
-  - "Bluebeard's Bride"
-  - "Bluebeard's Bride"
+palladiumfantasy1e:
+  - "Palladium Fantasy 1E"
+  - "Palladium Fantasy 1E"
+  - "Palladium"
 
+songsofthedusk:
+  - "Songs for the Dusk"
+  - "Songs for the Dusk"
+  - "Forged in the Dark"
 
+tremulus:
+  - "Tremulus"
+  - "Tremulus"
+  - "Apocalypse World Engine"
 
+actionmovieworld:
+  - "Action Movie World"
+  - "Action Movie World"
+  - "Apocalypse World Engine"
+
+forcoinandblood:
+  - "For Coin and blood"
+  - "For Coin and Blood"
+
+dragoncry:
+  - "Dragoncry"
+  - "Dragoncry"
+
+offworlders:
+  - "Offworlders"
+  - "Offworlders"
+
+mutantyearzerov2:
+  - "Mutant Year Zero"
+  - "Mutant: Year Zero"
+  - "Year Zero Engine"
+
+magicalogica:
+  - "Magica_Logia"
+  - "Magica Logia"
+
+devastra:
+  - "Devâstra"
+  - "Devâstra"
+
+alienyz:
+  - "Alien Roleplaying Game"
+  - "Aliens"
+  - "Year Zero Engine"
+
+terrorinfinityfx:
+  - "Terror Infinity - (FX)"
+  - "Terror Infinity FX"
+
+cyerberpunkredjumpstart:
+  - "Cyberpunk Red"
+  - "Cyberpunk Red"
+  
